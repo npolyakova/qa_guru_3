@@ -19,7 +19,7 @@ public class GithubTesting {
 
         $(".markdown-body").shouldHave(text("Soft assertions"));
         $(byText("SoftAssertions")).click();
-        assert (url().equals(Configuration.baseUrl + "selenide/selenide/wiki/SoftAssertions"));
+        $("#wiki-wrapper").shouldBe(visible);
 
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class:"));
     }
